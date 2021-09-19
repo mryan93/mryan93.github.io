@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    tr:nth-child(1){
+        background-color:#32CD32;
+    }
+    tr:nth-child(3){
+        background-color:#32CD32;
+    }
+    tr:nth-child(5){
+        background-color:#32CD32;
+    }
+    tr:nth-child(7){
+        background-color:#32CD32;
+    }
+    th{
+        background-color:#2E8B57;
+		color:white;
+    }
+</style>
+<head>
+	<meta charset = "UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<title>Matthew Wieser, ITIS 3135, HTML Tables</title>
+</head>
+
+<body>
+	<header>
+			<h1>Matthew Wieser >> ITIS 3135</h1>
+	</header>
+	<nav>
+		<a href="introduction.html">Introduction</a>
+		||
+		<a href="contract.html">Contract</a>
+		||
+		<a href="tables.html">Tables</a>
+		||
+		<a href="forms.html">Forms</a>
+		||
+		<a href="website_evaluations.html">Website Evaluations</a>
+	</nav>
+	
+	<main>
+		<h2>HTML Tables</h2>
+		
+		<h3>My Tabular Data</h3>
+		    <ol>
+		    <li>Matthew Wieser mwieser@yahoo.com 2</li>
+		    <li>Kal Vilmer vilmerk@gmail.com 7</li>
+		    <li>Caesar Roman rcaesar@yahoo.com 11</li>
+		    <li>Man Greek mangreek@gmail.com 1</li>
+		    <li>Hocus Pocus phocus@gmail.com 4</li>
+		    <li>Jessica Tabernacle tabjess@yahoo.com 3</li>
+		    <li>Medusa Smith msmith@yahoo.com 17</li>
+		</ol>
+		
+		
+		<h3>Employee Data in Simple Table</h3>
+		    <table>
+		        <thead>
+		            <tr>
+		                <th>Name</th>
+		                <th>Email</th>
+		                <th>Years of Service</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		                <td>Matthew Wieser</td>
+		                <td>mwieser@yahoo.com</td>
+		                <td>2</td>
+		            </tr>
+		            <tr>
+		                <td>Kal Vilmer</td>
+		                <td>vilmerk@gmail.com</td>
+		                <td>7</td>
+		            </tr>
+		            <tr>
+		                <td>Caesar Roman</td>
+		                <td>rcaesar@yahoo.com</td>
+		                <td>11</td>
+		            </tr>
+		            <tr>
+		                <td>Man Greek</td>
+		                <td>mangreek@gmail.com</td>
+		                <td>1</td>
+		            </tr>
+		            <tr>
+		                <td>Hocus Pocus</td>
+		                <td>phocus@gmail.com</td>
+		                <td>4</td>
+		            </tr>
+		            <tr>
+		                <td>Jessica Tabernacle</td>
+		                <td>tabjess@yahoo.com</td>
+		                <td>3</td>
+		            </tr>
+		            <tr>
+		                <td>Medusa Smith</td>
+		                <td>msmith@yahoo.com</td>
+		                <td>17</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		
+		<h3>Employee Data in Complex Table</h3>
+		   <figure>
+		    <table>
+		        <thead>
+		            <tr>
+		                <th>Department</th>
+		                <th>Name</th>
+		                <th>Email</th>
+		                <th>Years of Service</th>
+		                <th>Monthly Salary</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		                <td rowspan="2">Marketing</td>
+		                <td>Matthew Wieser</td>
+		                <td>mwieser@yahoo.com</td>
+		                <td>2</td>
+		                <td>$72,321.33</td>
+		            </tr>
+		            <tr>
+		                <td>Kal Vilmer</td>
+		                <td>vilmerk@gmail.com</td>
+		                <td>7</td>
+		                <td>$111,012.75</td>
+		            </tr>
+		            <tr>
+		                <td rowspan="2">IT</td>
+		                <td>Caesar Roman</td>
+		                <td>rcaesar@yahoo.com</td>
+		                <td>11</td>
+		                <td>$125,501.64</td>
+		            </tr>
+		            <tr>
+		                <td>Man Greek</td>
+		                <td>mangreek@gmail.com</td>
+		                <td>1</td>
+		                <td>$10,320.98</td>
+		            </tr>
+		            <tr>
+		                <td rowspan="3">Sales</td>
+		                <td>Hocus Pocus</td>
+		                <td>phocus@gmail.com</td>
+		                <td>4</td>
+		                <td>$87,403.22</td>
+		            </tr>
+		            <tr>
+		                <td>Jessica Tabernacle</td>
+		                <td>tabjess@yahoo.com</td>
+		                <td>3</td>
+		                <td>$34,335.78</td>
+		            </tr>
+		            <tr>
+		                <td>Medusa Smith</td>
+		                <td>msmith@yahoo.com</td>
+		                <td>17</td>
+		                <td>$65,671.03</td>
+		            </tr>
+		            <tr>
+		                <th>Total Years of Service</th>
+		                <td></td>
+		                <td></td>
+		                <td>46</td>
+		                <td>$506,566.73</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <figcaption>Employee information</figcaption>
+		    </figure>
+		
+		
+		
+		
+		
+		
+	</main>
+	
+	<footer>
+		<br/>
+		<nav>
+			<a href="https://webpages.uncc.edu/mwieser/" target="_blank">Charlotte.edu</a>
+			<a href="https://github.com/mryan93" target="_blank">Github</a>
+			<a href="https://mryan93.github.io" target="_blank">Github.io</a>
+			<a href="https://mryan93.github.io/itis3135/" target="_blank">ITIS 3135</a>
+			<a href="https://www.freecodecamp.org/mryan" target="_blank">FreeCodeCamp.org</a>
+			<a href="datacamp.com/profile/mwieser" target="_blank">DataCamp.com</a>
+			<a href="https://www.linkedin.com/in/matthewwieser/" target="_blank">linkedin.com</a>
+		</nav>
+		<br />
+		<p>
+			Page built by SchnitzelCorp
+		</p>
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Fintroduction.html">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+		</a>
+		
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+		</a>
+		
+	</footer>
+	
+</body>
+
+</html>

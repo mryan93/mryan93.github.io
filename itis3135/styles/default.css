@@ -29,12 +29,12 @@ a
 	text-decoration: none;
 	color: lightseagreen;
 	font-weight: bold;
-}
+}	
 
 a:hover
 {
 	text-decoration: underline;
-	color: mediumseagreen;
+	color: yellow;
 }
 
 figure
