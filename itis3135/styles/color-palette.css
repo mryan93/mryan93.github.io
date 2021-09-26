@@ -1,0 +1,39 @@
+.BdazzledBlue{
+		color: #28587b;
+	}
+
+	.CedarChest{
+		color: #db504a;
+	}
+
+	.CaribbeanGreen{
+		color: #1dd3b0;
+	}
+
+	.PeriwinkleCrayola{
+		color: #c4c6e7;
+	}
+
+	.BrightYellowCrayola{
+		color: #fcab10;
+	}
+
+	ul{
+		list-style-type: square;
+	}
+
+	h3{
+		text-decoration: underline;
+	}
+
+	body{
+		background-color: #28587b;
+	}
+
+	a{
+		color: #fcab10;
+	}
+
+	a:hover{
+		color: white;
+	}
