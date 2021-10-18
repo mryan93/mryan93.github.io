@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Matthew Wieser, ITIS 3135, Arrays</title>
+	<script>
+		let person = ["Matthew Wieser", "Kal Vilmer", "Caesar Roman", "Man Greek", "Hocus Pocus", "Jessica Tabernacle", "Medusa Smith"];
+		let salaries = [72321.33, 111012.75, 125501.64, 10320.98, 87403.22, 34335.78, 65671.03];
+
+		function addSalary(person, salaries)
+		{
+			var newPerson = document.getElementById('name').value;
+			var newSalary = document.getElementById('salary').value;
+			person.push(newPerson);
+			salaries.push(newSalary);
+		}
+
+		function displayResults(salaries)
+		{
+			let decimalFormat = new Intl.NumberFormat('en-US', {
+			minimumFractionDigits: 2,
+			maximumFractionDigits: 2,
+			});
+
+			var sum = 0.0;
+			var divisor = salaries.length;
+			for(var i = 0; i < salaries.length; i++)
+			{
+				sum += salaries[i];
+			}
+			var average = sum / divisor;
+			alert("Average salary: $" + decimalFormat.format(average));
+		}
+
+		function displaySalary(person, salaries)
+		{
+
+			for(var i = 0; i < person.length; i++)
+			{
+				var newString = person[i] + i;
+				changeText(person[i], salaries[i]);
+				changeText(newString, person[i]);
+			}
+
+		}
+
+		function changeText(id, text)
+		{
+			document.getElementById(id).innerHTML = text;
+		}
+
+	</script>
+</head>
+
+<body>
+	<header>
+			<h1>Matthew Wieser >> ITIS 3135</h1>
+	</header>
+
+	<main>
+		<form>
+			<label for="name">Name: </label>
+			<input type="text" placeholder="Enter a name" id="name">
+			<label for="salary">Salary: </label>
+			<input type="number" placeholder="Enter a salary" id="salary">
+		</form>
+		<div align="left">
+			<button type="button" onclick="addSalary(person, salaries)">Add Salary</button>
+		</div>
+		<div align="left">
+			<button type="button" onclick="displayResults(salaries)">Display Results</button>
+		</div>
+		<div align="left">
+			<button type="button" onclick="displaySalary(person, salaries)">Display Salary</button>
+		</div>
+		<div align="left">
+			<select>
+				<option value="Matthew Wieser">Matthew Wieser</option>
+				<option value="Kal Vilmer">Kal Vilmer</option>
+				<option value="Caesar Roman">Caesar Roman</option>
+				<option value="Man Greek">Man Greek</option>
+				<option value="Hocus Pocus">Hocus Pocus</option>
+				<option value="Jessica Tabernacle">Jessica Tabernacle</option>
+				<option value="Medusa Smith">Medusa Smith</option>
+			</select>
+		</div>
+
+		<div>
+			<table id="results_table">
+		        <thead>
+		            <tr>
+		                <th align="left">Name</th>
+		                <th align="left">Salary</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		                <td id="Matthew Wieser0"></td>
+		                <td id="Matthew Wieser"></td>
+		            </tr>
+		            <tr>
+		                <td id="Kal Vilmer1"></td>
+		                <td id="Kal Vilmer"></td>
+		            </tr>
+		            <tr>
+		                <td id="Caesar Roman2"></td>
+		                <td id="Caesar Roman"></td>
+		            </tr>
+		            <tr>
+		                <td id="Man Greek3"></td>
+		                <td id="Man Greek"></td>
+		            </tr>
+		            <tr>
+		                <td id="Hocus Pocus4"></td>
+		                <td id="Hocus Pocus"></td>
+		            </tr>
+		            <tr>
+		                <td id="Jessica Tabernacle5"></td>
+		                <td id="Jessica Tabernacle"></td>
+		            </tr>
+		            <tr>
+		                <td id="Medusa Smith6"></td>
+		                <td id="Medusa Smith"></td>
+		            </tr>
+		        </tbody>
+		    </table>
+		</div>
+
+
+	</main>
+
+	<footer>
+
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Factivity-6.html">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Factivity-6.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+		</a>
+
+	</footer>
+
+</body>
+
+</html>

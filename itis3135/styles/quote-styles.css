@@ -1,0 +1,62 @@
+/* 
+	Color Palette: https://coolors.co/031d44-04395e-70a288-dab785-d5896f
+*/
+
+.OxfordBlue 
+{
+	color: #031D44;
+}
+
+.IndigoDye 
+{
+	color: #04395E;
+}
+
+.PolishedPine 
+{
+	color: #70A288;
+}
+
+.Burlywood 
+{
+	color: #DAB785;
+}
+
+.CopperCrayola 
+{
+	color: #D5896F;
+}
+
+.pastel-green
+{
+    color: #b5e48c;
+}
+
+body
+{
+    border-style: solid;
+	border-width: 5px;
+	background-color: #DAB785;
+
+}
+
+a
+{
+    color: #39375B;
+}
+
+a:hover
+{
+    color: #5465FF;
+}
+
+.grid-container
+{
+    display: inline-grid;
+    background-color: #8C8A86;
+}
+
+.grid-item
+{
+    background-color: #B9BBB3;
+}

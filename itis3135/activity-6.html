@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Matthew Wieser, ITIS 3135, Activity#3</title>
+	<script>
+		function validateEntry(number)	// Function for checking that a valid number has been entered
+		{
+		try
+		{
+			number = parseInt(number);
+		}
+		catch
+		{
+			return false;
+		}
+			if(number < -10 || number > 10)
+		{
+			return false;
+		}
+		else if(number >= -10 && number <= 10)
+		{
+			number = Math.round(number);	// Rounds the number to an integer
+			if(number < 0)
+			{
+				number *= -1;		// Changes negative numbers to positive
+			}
+			return true;
+		}
+		}
+
+		function getShape(numSides)		// Checks what type of polygon has the number of sides specified by the user
+		{
+			var shape;
+			if (validateEntry(numSides) === true)
+			{
+				numSides = parseInt(numSides);
+				switch (numSides)
+				{
+					case 0:
+						shape = "Empty";
+						break;
+					case 1:
+						shape = "Henagon";
+						break;
+					case 2:
+						shape = "Digon";
+						break;
+					case 3:
+						shape = "Trigon";
+						break;
+					case 4:
+						shape = "Tetragon";
+						break;
+					case 5:
+						shape = "Pentagon";
+						break;
+					case 6:
+						shape = "Hexagon";
+						break;
+					case 7:
+						shape = "Heptagon";
+						break;
+					case 8:
+						shape = "Octagon";
+						break;
+					case 9:
+						shape = "Enneagon";
+						break;
+					case 10:
+						shape = "Decagon";
+						break;
+					default:
+						break;
+				}
+				return shape;
+			}
+			else
+			{
+				alert("Invalid entry");
+			}
+		}
+		var numSides = prompt("Enter the number of sides. It should be a number between 0 and 10.");	// Variable for storing the number of sides
+		alert(getShape(numSides));
+	</script>
+</head>
+
+<body>
+	<header>
+			<h1>Matthew Wieser >> ITIS 3135</h1>
+	</header>
+
+	<main>
+
+	</main>
+
+	<footer>
+
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Factivity-6.html">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Factivity-6.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+		</a>
+
+	</footer>
+
+</body>
+
+</html>

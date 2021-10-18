@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="styles/color-palette.css">
     <meta charset="UTF-8">
     <title>Welcome</title>
-    <script src="scripts/welcome-script.js">
-    </script>
+	<script>
+		function showQuotient(num1, num2){
+			alert(num1 / num2);
+		}
+
+		function generateEmail(fName, lName){
+			alert(fName + lName + "@wazoo.com");
+		}
+
+		function motivateMe(){
+			var random = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+			switch(random){
+				case 1:
+					alert("Never give up!");
+					break;
+				case 2:
+					alert("No pain no gain!");
+					break;
+				case 3:
+					alert("The journey of a thousand miles begins with a single step - some guy");
+					break;
+				default:
+					alert("Stop being lazy");
+					break;
+			}
+		}
+
+	</script>
 </head>
 <body>
     <header>
@@ -12,5 +39,47 @@
 			<img src="images/wombat.jpg" alt="A proud wombat" width="250" height="250">
 			</div>
     </header>
+<nav style="text-align:center;">
+		<a href="introduction.html">Introduction</a>
+		||
+		<a href="contract.html">Contract</a>
+		||
+		<a href="tables.html">Tables</a>
+		||
+		<a href="forms.html">Forms</a>
+		||
+		<a href="website_evaluations.html">Website Evaluations</a>
+	</nav>
+<main>
+    <h2 style="text-align:center;">ManiacRazorbackWombat LLC</h2>
+    <h2 style="text-align:center;">
+        <script>
+        var fullName = prompt("Hello! To get started, please enter some information about yourself. What is your full name?");
+        var mood = prompt("How are you doing today?");
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes();
+        document.write("Today is " + today.toDateString() + ", and the time is " + time + ".\n");
+        document.write("The ManiacRazorbackWombat LLC welcomes you, " + fullName + "!");
+        document.write("We are glad you are doing " + mood + "!");
+    </script>
+    </h2>
+	<form style="text-align:center;" name="quotientForm">
+		<label>Calculate Quotient of Two Numbers</label>
+		<input type="text" placeholder="Enter num1" name="num1" id="num1">
+		<input type="text" placeholder="Enter num2" name="num2" id="num2">
+		<input type="submit" name="calculate" id="calculate" onclick="showQuotient(quotientForm.num1.value, quotientForm.num2.value)">
+	</form>
+	<form style="text-align:center;" name="emailForm">
+		<label>Generate Company Email</label>
+		<input type="text" placeholder="Enter first name" name="fName" id="fName">
+		<input type="text" placeholder="Enter last name" name="lName" id="lName">
+		<input type="submit" name="companyEmail" id="companyEmail" onclick="generateEmail(emailForm.fName.value, emailForm.lName.value)">
+	</form>
+	<form style="text-align:center;" name="motivationForm">
+		<label>I Need Motivation!</label>
+		<input type="submit" name="motivationButton" id="motivationButton" onclick="motivateMe()">
+	</form>
+
+</main>
 </body>
 </html>
