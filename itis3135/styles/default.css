@@ -1,53 +1,47 @@
-
 /* got this from coolors.co - please improve!
  https://coolors.co/b5d6b2-53131e-5a464c-fffacc-ffefbd
 */
 
-body
-{
-	font-family: tahoma;
-	color: teal ;
-	background-color: silver;
-	margin-left: 75px;
-	margin-right: 75px;
+body {
+  font-family: tahoma;
+  color: teal;
+  background-color: silver;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
-header, footer
-{
-	text-align: center;
+header,
+footer {
+  text-align: center;
 }
 
-h1, h2, h3
-{
-	font-family: Cambria, Cochin, Georgia, serif;
-	text-align: center;
-	line-height: 0px;
+h1,
+h2,
+h3 {
+  font-family: Cambria, Cochin, Georgia, serif;
+  text-align: center;
+  line-height: 0px;
 }
 
-a
-{
-	text-decoration: none;
-	color: lightseagreen;
-	font-weight: bold;
-}	
-
-a:hover
-{
-	text-decoration: underline;
-	color: yellow;
+a {
+  text-decoration: none;
+  color: lightseagreen;
+  font-weight: bold;
 }
 
-figure
-{
-	text-align: center;
+a:hover {
+  text-decoration: underline;
+  color: yellow;
 }
 
-figcaption
-{
-	font-style: italic;
+figure {
+  text-align: center;
 }
 
-nav
-{
-	text-align: center;
+figcaption {
+  font-style: italic;
+}
+
+nav {
+  text-align: center;
 }

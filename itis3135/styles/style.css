@@ -1,0 +1,61 @@
+body {
+  background-color: darkseagreen;
+  font-size: 18px;
+  color: indianred;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+a {
+  color: indigo;
+}
+
+h1 {
+  margin-left: 225px;
+}
+
+.container {
+  width: auto;
+  align-items: center;
+  margin: 40px auto;
+  margin-left: 400px;
+  overflow: auto;
+}
+
+.gallery-inner {
+  height: 500px;
+  width: 650px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border: forestgreen solid 5px;
+}
+
+.gallery-inner img {
+  display: none;
+  width: 650px;
+  height: 500px;
+}
+
+.gallery-inner img.active {
+  display: inline-block;
+}
+
+.previous,
+.next {
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+}
+
+.previous {
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next {
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}

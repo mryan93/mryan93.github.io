@@ -1,0 +1,147 @@
+tr:nth-child(1) {
+  background-color: darkgoldenrod;
+}
+
+tr:nth-child(3) {
+  background-color: darkgoldenrod;
+}
+
+tr:nth-child(5) {
+  background-color: darkgoldenrod;
+}
+
+tr:nth-child(7) {
+  background-color: darkgoldenrod;
+}
+
+th {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: large;
+}
+
+nav {
+  text-align: center;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  line-height: 0px;
+  font-size: larger;
+  color: white;
+}
+
+.minion-yellow {
+  color: #fde74c;
+}
+
+.prussian-blue {
+  color: #253d5b;
+}
+
+.orange-red-crayola {
+  color: #fe5f55;
+}
+
+.dark-sea-green {
+  color: #84a98c;
+}
+
+.blood-red {
+  color: #6b0504;
+}
+
+header {
+  text-align: center;
+  color: darkgoldenrod;
+}
+
+body a {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: gold;
+}
+
+body {
+  background-color: #6b0504;
+}
+
+img {
+  box-shadow: 10px 5px 5px black;
+}
+
+nav {
+  font-size: larger;
+}
+
+#nav-div {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  width: fit-content;
+  max-width: 500px;
+  max-height: 500px;
+  background-color: #253d5b;
+  border-radius: 5px;
+  border: #5f0f40 solid 5px;
+  box-shadow: 10px 5px 5px black;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: darkgoldenrod;
+}
+
+.container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  width: fit-content;
+  max-width: 300px;
+  max-height: 500px;
+  background-color: #253d5b;
+  border-radius: 5px;
+  border: #5f0f40 solid 5px;
+  box-shadow: 10px 5px 5px black;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+ol {
+  text-align: center;
+  color: white;
+  font-size: larger;
+}

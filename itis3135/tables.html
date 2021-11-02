@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    tr:nth-child(1){
-        background-color:#32CD32;
-    }
-    tr:nth-child(3){
-        background-color:#32CD32;
-    }
-    tr:nth-child(5){
-        background-color:#32CD32;
-    }
-    tr:nth-child(7){
-        background-color:#32CD32;
-    }
-    th{
-        background-color:#2E8B57;
-		color:white;
-    }
-</style>
 <head>
 	<meta charset = "UTF-8">
-	<link href="styles/default.css" rel="stylesheet" type="text/css">
-	<title>Matthew Wieser, ITIS 3135, HTML Tables</title>
+	<link href="styles/tables.css" rel="stylesheet" type="text/css">
+	<title>Tables</title>
 </head>
-
 <body>
 	<header>
-			<h1>Matthew Wieser >> ITIS 3135</h1>
+		<h1 id="my-name">Matthew Wieser &#9728; &#9728; ITIS 3135</h1>
 	</header>
-	<nav>
-		<a href="introduction.html">Introduction</a>
-		||
-		<a href="contract.html">Contract</a>
-		||
-		<a href="tables.html">Tables</a>
-		||
-		<a href="forms.html">Forms</a>
-		||
-		<a href="website_evaluations.html">Website Evaluations</a>
-	</nav>
+	<div id="nav-div" style="margin-top: 30px;">
+		<a href="index.html">Home</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="introduction.html" target="_blank">Introduction</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="contract.html" target="_blank">Contract</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="tables.html" target="_blank">Tables</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="forms.html" target="_blank">Forms</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="website_evaluations.html" target="_blank">Website Evaluations</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="project_rand.html" target="_blank">Project Proposal</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="welcome.html" target="_blank">Welcome</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="wieser-activity-accessibility.html" target="_blank">Accessibility Assignment</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="gallery.html" target="_blank">Image Gallery</a>
+		<strong style="color: darkgoldenrod">
+			&#9873;
+		</strong>
+		<a href="calculator_fcc.html">Calculator</a>
+	</div>
 	
 	<main>
 		<h2>HTML Tables</h2>
-		
+		<br />
+		<div>
 		<h3>My Tabular Data</h3>
 		    <ol>
 		    <li>Matthew Wieser mwieser@yahoo.com 2</li>
@@ -53,8 +67,10 @@
 		    <li>Jessica Tabernacle tabjess@yahoo.com 3</li>
 		    <li>Medusa Smith msmith@yahoo.com 17</li>
 		</ol>
+		</div>
 		
-		
+		<br />
+		<div>
 		<h3>Employee Data in Simple Table</h3>
 		    <table>
 		        <thead>
@@ -102,10 +118,13 @@
 		            </tr>
 		        </tbody>
 		    </table>
+			</div>
 		
+		<br />
+		<div>
 		<h3>Employee Data in Complex Table</h3>
 		   <figure>
-		    <table>
+		    <table id="complex-table">
 		        <thead>
 		            <tr>
 		                <th>Department</th>
@@ -172,12 +191,8 @@
 		    </table>
 		    <figcaption>Employee information</figcaption>
 		    </figure>
-		
-		
-		
-		
-		
-		
+			</div>
+			
 	</main>
 	
 	<footer>
@@ -193,13 +208,13 @@
 		</nav>
 		<br />
 		<p>
-			Page built by SchnitzelCorp
+			Page built by ManiacRazorbackWombat&#8482; LLC
 		</p>
-		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Fintroduction.html">
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Ftables.html" target="_blank">
 			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
 		</a>
 		
-		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Ftables.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css" target="_blank">
 			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
 		</a>
 		
