@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<title>Contact</title>
+	<script src="scripts/contact.js" defer></script>
+</head>
+
+<body class="BrightYellowCrayola">
+	<div w3-include-html="components/header.html"></div>
+	<script>
+		w3.includeHTML();
+	</script>
+
+	<main>
+		<h2>Contact Us</h2>
+		<form id="contact-form" >
+			<label for="name">Name</label>
+			<input type="text" id="name" placeholder="Enter your name" required>
+			<br />
+			<label for="number" id="number-label">Phone Number</label>
+			<input type="number" id="number" placeholder="Enter your number" required>
+			<br />
+			<label for="email">Email</label>
+			<input type="email" id="email" placeholder="Enter your email" required>
+			<br />
+			<br />
+			<label for="suggestions">Suggestions</label>
+			<br />
+			<textarea id="suggestions"></textarea>
+			<br />
+			<br />
+			<button onclick="displayText()" type="button" id="submit-button">Submit</button>
+			<p id="user-info"></p>
+		</form>
+	</main>
+
+	<div w3-include-html="components/footer.html"></div>
+	<script>
+		w3.includeHTML();
+	</script>
+<div id="validation-div">
+	<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmwieser%2Fitis3135%2Fbrand%2Fcontact.html">
+		HTML Validation
+	</a>
+	<strong>
+		&#10004;
+	</strong>
+	
+	<a
+		href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fwebpages.uncc.edu%252Fmwieser%252Fitis3135%252Fbrand%252Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+		CSS Validation
+	</a>
+	<strong>
+		&#10004;
+	</strong>
+	</div>
+
+</body>
+
+</html>
