@@ -1,10 +1,10 @@
 $(document).ready(function() {
  
- $('a').addEventListener('click', function(){
-  var name = $(this).getAttribute('title').value;
+ $("a[title]").click(function(){
+  var fileName = "json_files/" + $(this).attr('title') + ".json";
   $.ajax({
    type: "get",
-   url: name + ".json",
+   url: fileName,
    beforeSend: function(){
      $("#bio").html("loading...");
    },
@@ -14,9 +14,17 @@ $(document).ready(function() {
    },
    datatype: "json",
    success: function(data){
+    $("#title").html("");
+    $("#name").html("");
+    $("#month").html("");
     $("#bio").html("");
-    $("#bio").append
-    ("<h3>" + data.speakers.text + "</h3>");
+    $.each(data.speakers, function(i, speakers){
+      $("#image").attr("src", speakers.image);
+      $("#title").append(speakers.title);
+      $("#name").append(speakers.speaker);
+      $("#month").append(speakers.month);
+      $("#bio").append(speakers.text);
+    });
    }
   });
  });
