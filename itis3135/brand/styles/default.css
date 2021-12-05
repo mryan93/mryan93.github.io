@@ -92,7 +92,7 @@ footer a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  height: 600px;
   width: 500px;
   background-color: #253d5b;
   border: orange solid 5px;
@@ -155,4 +155,12 @@ ul {
 strong {
   color: white;
   font-size: larger;
+}
+
+#appointment {
+  color: white;
+}
+
+.my-wombat{
+  background-color: #253d5b;
 }

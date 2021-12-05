@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="https://www.w3schools.com/lib/w3.js"></script>
-	<link href="styles/default.css" rel="stylesheet" type="text/css">
 	<title>Contact</title>
+	<link rel="stylesheet" href="scripts/jquery-ui-1.13.0.custom/jquery-ui.min.css">
+	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="scripts/dmotz-oriDomi-89fe922/oridomi.min.js"></script>
+	<script src="scripts/chosen/chosen.jquery.min.js"></script>
+	<script src="scripts/jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
+	<script src="https://kit.fontawesome.com/bc2cf76166.js" crossorigin="anonymous"></script>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
 	<script src="scripts/contact.js" defer></script>
 </head>
-
 <body class="BrightYellowCrayola">
 	<div w3-include-html="components/header.html"></div>
 	<script>
 		w3.includeHTML();
 	</script>
+	<br />
 
 	<main>
+		<h2>Fold out completely! <i class="fas fa-arrow-down"></i></h2>
+		<div style="text-align: center;" class="my-wombat">
+		<img src="images/wombat.jpg" alt="A Wombat" height="500" width="500">
+		</div>
+		<br />
 		<h2>Contact Us</h2>
-		<form id="contact-form" >
+		<!-- FOLD OUT CONTACT FORM TO FILL OUT FIELDS-->
+		<form id="contact-form" class="form">
 			<label for="name">Name</label>
-			<input type="text" id="name" placeholder="Enter your name" required>
+			<input type="text" id="name" placeholder="Enter your name" title="Enter your first and last name" required>
 			<br />
 			<label for="number" id="number-label">Phone Number</label>
-			<input type="number" id="number" placeholder="Enter your number" required>
+			<input type="number" id="number" placeholder="Enter your number" title="Enter a valid phone number we can reach you at" required>
 			<br />
 			<label for="email">Email</label>
-			<input type="email" id="email" placeholder="Enter your email" required>
+			<input type="email" id="email" placeholder="Enter your email" title="Please enter a valid email we can reach you at" required>
+			<br />
+			<br />
+			<label for="country">Country</label>
+			<select id="country">
+				<option value="United States">United States</option>
+				<option value="Great Britain">Great Britain</option>
+				<option value="Canada">Canada</option>
+				<option value="Australia">Australia</option>
+			</select>
 			<br />
 			<br />
 			<label for="suggestions">Suggestions</label>
 			<br />
-			<textarea id="suggestions"></textarea>
+			<textarea id="suggestions" title="Enter any suggestions you might have for improving our services"></textarea>
+			<br />
+			<h3 id="appointment">Want to schedule an optional in-person appointment? Select a date from below</h3>
+			<label for="date">Date</label>
+			<input type="text" id="date" placeholder="Choose a date" title="Choose a date to meet with a representative">
 			<br />
 			<br />
 			<button onclick="displayText()" type="button" id="submit-button">Submit</button>
