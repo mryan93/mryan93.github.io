@@ -205,3 +205,17 @@ label {
 #date {
   cursor: pointer;
 }
+
+#submit-button {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #ffd166;
+  font-size: large;
+  border-radius: 7px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#submit-button:hover {
+  background-color: black;
+  color: #ffd166;
+}
