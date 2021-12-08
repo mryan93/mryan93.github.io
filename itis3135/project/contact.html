@@ -1,0 +1,61 @@
+<!-- Sources
+  Dropdown menu: https://www.w3schools.com/howto/howto_css_dropdown.asp
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <script src="https://www.w3schools.com/lib/w3.js"></script>
+ <script src="scripts/script.js"></script>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="styles/styles.css" rel="stylesheet" type="text/css">
+ <title>Contact</title>
+</head>
+
+<body id="page-content">
+ <div w3-include-html="components/header.html"></div>
+ <script>
+  w3.includeHTML();
+ </script>
+ <main>
+  <div class="content-container">
+    <h2>Loi A Contact Information: </h2>
+    <ul>
+      <li>Email: <a href="mailto: la@uncc.edu">la@uncc.edu</a></li>
+      <li>Phone: (980) 213-5138</li>
+    </ul>
+    <h3>Contact</h3>
+    <label for="user-name">Name</label>
+    <input type="text" placeholder="Enter your name" title="Enter your full name" required>
+    <br>
+    <label for="user-email">Email</label>
+    <input type="email" placeholder="Enter your email" title="Enter a valid email" required>
+    <br>
+    <label id="number-label" for="user-number">Phone Number</label>
+    <input id="number-input" type="number" placeholder="Enter phone number" title="Enter a valid phone number we can reach you at" required>
+    <br>
+    <label for="date">Date</label>
+    <input id="date" type="date" title="Enter a date to meet" required>
+    <br>
+    <br>
+    <label for="text-box">What would you like to contact me about?</label>
+    <br>
+    <br>
+    <textarea id="text-box" placeholder="Enter any comments you might have" title="Please describe the nature of any meeting you might wish to have"></textarea>
+  </div>
+ </main>
+ <br>
+ <br>
+ <div w3-include-html="components/footer.html"></div>
+ <script>
+  w3.includeHTML();
+ </script>
+
+</body>
+
+</html>

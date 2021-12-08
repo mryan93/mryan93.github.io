@@ -1,25 +1,48 @@
+<!-- Sources
+  Dropdown menu: https://www.w3schools.com/howto/howto_css_dropdown.asp
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
  <script src="https://www.w3schools.com/lib/w3.js"></script>
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ <script src="scripts/script.js"></script>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="styles/styles.css" rel="stylesheet" type="text/css">
  <title>About</title>
 </head>
-<body>
+
+<body id="page-content">
  <div w3-include-html="components/header.html"></div>
  <script>
   w3.includeHTML();
  </script>
  <main>
+  <div class="content-container">
+   <p id="about-paragraph">Hello, my name is Loi A and I'm a 33 year old computer science major at the University of North Carolina at Charlotte. My primary discipline is information technology (IT). I've always been fascinated with how computer networks work to enable widespread communication across thousands of devices. I hope that after graduation I have the opportunity to work with an employer that incorporates networking into their business. Click the button below to display key information from my resume.</p>
+
+   <h1 id="title-type"></h1>
+   <h2 id="programming-languages"></h2>
+   <h2 id="operating-systems"></h2>
+   <h2 id="languages"></h2>
+
+   <button type="button" id="display-button">Display</button>
+  </div>
 
  </main>
+ <br>
+ <br>
  <div w3-include-html="components/footer.html"></div>
  <script>
   w3.includeHTML();
  </script>
- 
+
 </body>
+
 </html>
