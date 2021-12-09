@@ -7,9 +7,12 @@
 
 <head>
  <script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="scripts/jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
  <script src="scripts/script.js"></script>
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
   integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="scripts/jquery-ui-1.13.0.custom/jquery-ui.min.css">
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +28,7 @@
  <main>
   <div class="content-container">
     <h2>Loi A Contact Information: </h2>
-    <ul>
+    <ul>  <!--Opens an email client on the user's desktop with the email address already selected-->
       <li>Email: <a href="mailto: la@uncc.edu">la@uncc.edu</a></li>
       <li>Phone: (980) 213-5138</li>
     </ul>
@@ -40,7 +43,7 @@
     <input id="number-input" type="number" placeholder="Enter phone number" title="Enter a valid phone number we can reach you at" required>
     <br>
     <label for="date">Date</label>
-    <input id="date" type="date" title="Enter a date to meet" required>
+    <input id="date" type="text" title="Enter a date to meet" required>
     <br>
     <br>
     <label for="text-box">What would you like to contact me about?</label>

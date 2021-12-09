@@ -48,6 +48,8 @@
   color: #2a4770;
 }
 
+/* Dropdown button styling */
+
 .dropdown-button {
   width: 100px;
   background-color: #2dd881;
@@ -61,6 +63,8 @@
   position: relative;
   display: inline-block;
 }
+
+/*Content styling for dropdown box*/
 
 .dropdown-content {
   display: none;
@@ -98,6 +102,8 @@ body {
   background-color: #18206f;
 }
 
+/* Navigation banner */
+
 .banner {
   display: flex;
   flex-direction: row;
@@ -118,6 +124,8 @@ body {
   margin-left: 40px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/*Container for holding user inputs and information*/
 
 .content-container {
   padding: 10px;
@@ -170,7 +178,21 @@ footer {
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
+#display-button2 {
+  cursor: pointer;
+  background-color: #ffd166;
+  font-size: large;
+  border-radius: 7px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
 #display-button:hover {
+  background-color: black;
+  color: #ffd166;
+}
+
+#display-button2:hover {
   background-color: black;
   color: #ffd166;
 }
@@ -220,6 +242,8 @@ label {
   color: #ffd166;
 }
 
+/*Accordion widget css*/
+
 #projects-accordion {
   width: 700px;
   margin-right: auto;
@@ -230,6 +254,8 @@ label {
 footer {
   color: white;
 }
+
+/*Slider css*/
 
 #slider-div {
   margin: 0;
