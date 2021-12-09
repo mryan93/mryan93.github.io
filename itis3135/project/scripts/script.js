@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
  $("#page-content").fadeOut(0).slideDown(500);
 
  $("#display-button").click(function(){
@@ -27,5 +28,28 @@ $(document).ready(function(){
     });
    }
   });
+ });
+});
+
+$(document).ready(function(){
+   $("#projects-accordion").accordion({
+  heightStyle: "content",
+  collapsible: true
+ });
+});
+
+$(document).ready(function(){
+ $("#certification-slider").bxSlider({
+  randomStart: true,
+  auto: true,
+  minSlides: 1,
+  maxSlides: 1,
+  slideWidth: 500,
+  slideMargin: 20,
+  captions: true,
+  speed: 3000,
+  pager: true,
+  pagerSelector: '#pager',
+  pagerType: 'short'
  });
 });

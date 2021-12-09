@@ -8,9 +8,11 @@
 <head>
  <script src="https://www.w3schools.com/lib/w3.js"></script>
  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
  <script src="scripts/script.js"></script>
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
   integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +26,16 @@
   w3.includeHTML();
  </script>
  <main>
+   <div id="slider-div">
+   <h2 id="slider-title">Certifications</h2>
+   <p id="slider-explanation">Some select certifications that demonstrate my core skills</p>
+   <ul id="certification-slider">
+     <li><img src="images/one.png" alt="Pic One" title="Pic One" height="500px" width="500px"></li>
+     <li><img src="images/two.png" alt="Pic Two" title="Pic Two" height="500px" width="500px"></li>
+     <li><img src="images/three.png" alt="Pic Three" title="Pic Three" height="500px" width="500px"></li>
+   </ul>
+   <p id="pager"></p>
+  </div>
 
  </main>
  <div w3-include-html="components/footer.html"></div>

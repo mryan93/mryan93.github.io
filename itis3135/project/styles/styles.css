@@ -219,3 +219,45 @@ label {
   background-color: black;
   color: #ffd166;
 }
+
+#projects-accordion {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 130px;
+}
+
+footer {
+  color: white;
+}
+
+#slider-div {
+  margin: 0;
+  position: relative;
+  left: 35%;
+}
+
+#slider-title {
+  position: relative;
+  margin: 10;
+  left: 12%;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#slider-explanation {
+  position: relative;
+  margin: 10;
+  left: 0%;
+  font-size: larger;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#pager {
+  color: white;
+  font-size: larger;
+  position: relative;
+  margin: 0;
+  left: 16%;
+}
